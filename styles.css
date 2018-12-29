@@ -86,12 +86,22 @@ header{
 
 header h2{
   font-size: 40px;
-  margin: 10px 0;
-
+  margin: 10px 0px;
 }
 
 header nav{
   font-size: 20px;
+}
+
+header nav a{
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 5px;
+}
+
+header nav a:hover{
+  border-bottom: none;
+  background-color: rgba(255, 255, 255, .4);
 }
 
 @media (max-width: 600px){
@@ -103,6 +113,15 @@ header nav{
   header h2{
     font-size: 30px;
     text-shadow: 1px 1px 0  rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media(max-width: 500px){
+  header h2{
+    font-size: 20px;
+  }
+  header nav{
+    font-size: 15px;
   }
 }
 
@@ -161,6 +180,11 @@ header nav{
 
 /*///////////////////////// about styles //////////////////////////////*/
 
+/* @media(max-width: 600px){
+   .about h3.title{
+    font-size: 22px;
+  }
+} */
 
 
 /*//////////////////// offerings style////////////////////////////// */
@@ -258,6 +282,17 @@ form .btn:hover{
   color: white;
 }
 
+@media(max-width: 600px){
+  form .btn{
+    font-size: 18px;
+    padding: 0px;
+    border: 1px solid rgba(255, 50, 0, .7);
+  }
+  .contact form input{
+    font-size: 12px;
+  }
+}
+
 /*//////////////////// footer styles ////////////////////*/
 
 footer{
@@ -277,9 +312,21 @@ footer ul li{
   margin-left: 16px;
 }
 
+footer li a{
+  color: #aaa;
+  text-decoration: none;
+}
+
 footer p{
   text-transform: uppercase;
   font-size: 14px;
   opacity: .3;
   align-self: center;
+}
+
+
+@media(max-width: 600px){
+section h3.title{
+    font-size: 22px;
+  }
 }
